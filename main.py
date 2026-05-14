@@ -88,7 +88,10 @@ if gdf_b is not None and not gdf_b.empty:
     for idx, row in gdf_p.iterrows():
         # Check spatial intersection in meters
         is_in_range = active_buffer is not None and active_buffer.intersects(row.geometry)
-        p_color = '#228B22' if is_in_range else '#FF000
+        
+        # --- FIXED LINE 91 ---
+        p_color = '#228B22' if is_in_range else '#FF0000'
+        # --------------------
         
         point_4326 = gdf_p_4326.loc[idx].geometry.centroid
         folium.CircleMarker(
@@ -99,3 +102,12 @@ if gdf_b is not None and not gdf_b.empty:
             fill_opacity=0.8,
             popup=row['name']
         ).add_to(m)
+
+    # 4. LEGEND (Compact English)
+    legend_html = '''
+     <div style="position: fixed; bottom: 50px; left: 50px; width: 150px; height: 75px; 
+     background-color: rgba(255, 255, 255, 0.9); border:1px solid grey; z-index:9999; font-size:11px;
+     padding: 8px; border-radius: 5px; pointer-events: none;">
+     <b>Legend:</b><br>
+     <i style="background: #3186cc; width: 10px; height: 10px; display: inline-block;"></i> Buildings<br>
+     <i style="background: #FF0000; border-radius: 50%; width: 10px; height: 10px; display: inline-block;"></i> Pharmacy (
