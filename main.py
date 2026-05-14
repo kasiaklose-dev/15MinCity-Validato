@@ -89,3 +89,13 @@ if gdf_b is not None and not gdf_b.empty:
         # Check spatial intersection in meters
         is_in_range = active_buffer is not None and active_buffer.intersects(row.geometry)
         p_color = '#228B22' if is_in_range else '#FF000
+        
+        point_4326 = gdf_p_4326.loc[idx].geometry.centroid
+        folium.CircleMarker(
+            location=[point_4326.y, point_4326.x],
+            radius=6,
+            color=p_color,
+            fill=True,
+            fill_opacity=0.8,
+            popup=row['name']
+        ).add_to(m)
