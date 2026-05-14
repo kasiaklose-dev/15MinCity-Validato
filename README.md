@@ -1,33 +1,33 @@
 # 🏙️ 15MinCity-Validator
 
-### 🌐 [KLIKNIJ TUTAJ, ABY OTWORZYĆ APLIKACJĘ LIVE](https://15mincity-validato-f4nrx8mof4rqudbxlpabal.streamlit.app/)
+### 🌐 [CLICK HERE TO OPEN THE LIVE APP](https://15mincity.streamlit.app/)
 
 ---
 
-## 📖 O projekcie
-Ten instrument został zaprojektowany w celu automatyzacji analizy urbanistycznej poprzez ocenę dostępności aptek dla budynków mieszkalnych na danym obszarze. Zainspirowana koncepcją urbanistyczną **"15-Minute City"**, aplikacja pobiera dane w czasie rzeczywistym z OpenStreetMap, wykonuje zaawansowane obliczenia przestrzenne i generuje dynamiczną, interaktywną wizualizację.
+## 📖 About the Project
+This tool was designed to automate urban analysis by evaluating the accessibility of pharmacies for residential buildings within a specific area. Inspired by the **"15-Minute City"** urban planning concept, the application fetches real-time data from OpenStreetMap, performs advanced spatial calculations, and generates a dynamic, interactive visualization.
 
-## 💡 Filozofia projektu i podejście
-Jako analityk, a nie programista pełnoetatowy, skupiłam się na wykorzystaniu nowoczesnych narzędzi do rozwiązywania złożonych problemów przestrzennych:
+## 💡 Project Philosophy & Approach
+As an analyst rather than a full-time software engineer, I focused on leveraging modern tools to solve complex spatial problems:
 
-* **Problem-First Mindset:** Rdzeniem projektu jest analiza miejska, a nie tylko kod. Skupiłam się na identyfikacji luk w usługach i dokładności danych, aby zapewnić przydatne informacje dla planowania przestrzennego.
-* **AI-Assisted Development:** Wykorzystałam narzędzia AI, aby połączyć wymagania analityczne z implementacją techniczną. Pozwoliło to na zbudowanie zaawansowanego narzędzia GIS, które zazwyczaj wymagałoby dedykowanego zespołu deweloperskiego.
-* **Synergia Narzędzi:** Moją siłą jest wiedza, które narzędzia połączyć (OSMnx + Folium + Streamlit), aby dostarczyć profesjonalny interaktywny raport.
+* **Problem-First Mindset:** The core of this project is urban analysis, not just code. I focused on identifying service gaps and ensuring data accuracy to provide actionable insights for urban planning.
+* **AI-Assisted Development:** I utilized AI tools to bridge the gap between analytical requirements and technical implementation. This allowed for the creation of a sophisticated GIS tool that would typically require a dedicated development team.
+* **Tool Synergy:** My strength lies in knowing how to integrate various technologies (OSMnx + Folium + Streamlit) to deliver a professional-grade interactive report.
 
-## 🚀 Kluczowe Funkcje
-* **Integracja Danych Live:** Pobiera dane o budynkach i aptekach bezpośrednio z API OpenStreetMap.
-* **Interaktywna Analiza:** Zawiera suwak zasięgu w czasie rzeczywistym (100m - 2000m) do błyskawicznej wizualizacji dostępności po kliknięciu w budynek.
-* **Dokładność Przestrzenna:** Wykorzystuje układy współrzędnych (EPSG:2180) dla precyzyjnych pomiarów odległości w metrach.
-* **Dynamiczne Podświetlanie:** Apteki w zasięgu automatycznie zmieniają kolor na zielony po wygenerowaniu bufora.
+## 🚀 Key Features
+* **Live Data Integration:** Fetches building and pharmacy data directly from the OpenStreetMap API.
+* **Interactive Analysis:** Features a real-time range slider (100m – 2000m) for instant accessibility visualization upon clicking a building.
+* **Spatial Accuracy:** Utilizes projected coordinate systems (EPSG:2180) for precise metric distance measurements.
+* **Dynamic Highlighting:** Pharmacies within the range automatically turn green once the buffer is generated.
 
-## 🛠️ Stack Techniczny
-* **Analiza:** Python (GeoPandas, OSMnx, Pandas)
-* **Wizualizacja:** Folium, Streamlit
-* **Geo-Math:** Shapely, PyProj (precyzyjne rzutowanie metryczne)
+## 🛠️ Tech Stack
+* **Analysis:** Python (GeoPandas, OSMnx, Pandas)
+* **Visualization:** Folium, Streamlit
+* **Geo-Math:** Shapely, PyProj (precise metric projection)
 
 ---
 
-### 🔗 Link do aplikacji: 
-[https://15mincity-validato-f4nrx8mof4rqudbxlpabal.streamlit.app/](https://15mincity-validato-f4nrx8mof4rqudbxlpabal.streamlit.app/)
+### 🔗 Application Link: 
+[https://15mincity.streamlit.app/](https://15mincity.streamlit.app/)
 
-*Projekt stworzony w celach analitycznych i edukacyjnych.*
+*This project was created for analytical and educational purposes.*
