@@ -1,30 +1,33 @@
-🏙️ 15MinCity-Validator
+# 🏙️ 15MinCity-Validator
 
-This tool is designed to automate urban analysis by evaluating the accessibility of pharmacies for residential buildings within a given area. Inspired by the "15-Minute City" urban planning concept, the application fetches real-time data from OpenStreetMap, performs advanced spatial calculations, and generates a dynamic interactive visualization.
-💡 Project Philosophy & Approach
+### 🌐 [KLIKNIJ TUTAJ, ABY OTWORZYĆ APLIKACJĘ LIVE](https://15mincity-validato-f4nrx8mof4rqudbxlpabal.streamlit.app/)
 
-As an analyst rather than a full-time software engineer, my approach to this project was focused on leveraging modern tools to solve complex spatial problems.
+---
 
-    Problem-First Mindset: The core of this project is urban analysis, not just code. I focused on identifying service gaps and data accuracy to provide actionable insights for urban planning.
+## 📖 O projekcie
+Ten instrument został zaprojektowany w celu automatyzacji analizy urbanistycznej poprzez ocenę dostępności aptek dla budynków mieszkalnych na danym obszarze. Zainspirowana koncepcją urbanistyczną **"15-Minute City"**, aplikacja pobiera dane w czasie rzeczywistym z OpenStreetMap, wykonuje zaawansowane obliczenia przestrzenne i generuje dynamiczną, interaktywną wizualizację.
 
-    AI-Assisted Development: I utilized AI tools to bridge the gap between my analytical requirements and the technical implementation. This allowed me to build a sophisticated GIS tool that would typically require a dedicated development team.
+## 💡 Filozofia projektu i podejście
+Jako analityk, a nie programista pełnoetatowy, skupiłam się na wykorzystaniu nowoczesnych narzędzi do rozwiązywania złożonych problemów przestrzennych:
 
-    Tool Synergy: My strength lies in knowing which tools to combine (OSMnx + Folium + Turf.js) to deliver a professional-grade interactive report.
+* **Problem-First Mindset:** Rdzeniem projektu jest analiza miejska, a nie tylko kod. Skupiłam się na identyfikacji luk w usługach i dokładności danych, aby zapewnić przydatne informacje dla planowania przestrzennego.
+* **AI-Assisted Development:** Wykorzystałam narzędzia AI, aby połączyć wymagania analityczne z implementacją techniczną. Pozwoliło to na zbudowanie zaawansowanego narzędzia GIS, które zazwyczaj wymagałoby dedykowanego zespołu deweloperskiego.
+* **Synergia Narzędzi:** Moją siłą jest wiedza, które narzędzia połączyć (OSMnx + Folium + Streamlit), aby dostarczyć profesjonalny interaktywny raport.
 
-🚀 Key Features
+## 🚀 Kluczowe Funkcje
+* **Integracja Danych Live:** Pobiera dane o budynkach i aptekach bezpośrednio z API OpenStreetMap.
+* **Interaktywna Analiza:** Zawiera suwak zasięgu w czasie rzeczywistym (100m - 2000m) do błyskawicznej wizualizacji dostępności po kliknięciu w budynek.
+* **Dokładność Przestrzenna:** Wykorzystuje układy współrzędnych (EPSG:2180) dla precyzyjnych pomiarów odległości w metrach.
+* **Dynamiczne Podświetlanie:** Apteki w zasięgu automatycznie zmieniają kolor na zielony po wygenerowaniu bufora.
 
-    Live Data Integration: Fetches building and pharmacy data directly from the OpenStreetMap API.
+## 🛠️ Stack Techniczny
+* **Analiza:** Python (GeoPandas, OSMnx, Pandas)
+* **Wizualizacja:** Folium, Streamlit
+* **Geo-Math:** Shapely, PyProj (precyzyjne rzutowanie metryczne)
 
-    Interactive Analysis: Includes a real-time range slider (100m - 2000m) to visualize accessibility on the fly.
+---
 
-    Spatial Accuracy: Uses projected coordinate systems (EPSG:2180) for precise metric distance measurements.
+### 🔗 Link do aplikacji: 
+[https://15mincity-validato-f4nrx8mof4rqudbxlpabal.streamlit.app/](https://15mincity-validato-f4nrx8mof4rqudbxlpabal.streamlit.app/)
 
-    Data Portability: Exports results to GeoPackage (.gpkg) format, compatible with QGIS and ArcGIS.
-
-🛠️ Tech Stack
-
-    Analysis: Python (GeoPandas, OSMnx, Pandas)
-
-    Visualization: Folium, Leaflet.js
-
-    Geo-Math: Turf.js (for client-side dynamic buffering)
+*Projekt stworzony w celach analitycznych i edukacyjnych.*
